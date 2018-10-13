@@ -1,8 +1,8 @@
 <?php
 
-namespace mrlco\sliderrevolution;
+namespace mrlco\revolutionslider;
 
-use mrlco\sliderrevolution\SliderAsset;
+use mrlco\revolutionslider\SliderAsset;
 
 use yii\helpers\Html;
 use yii\base\InvalidConfigException;
