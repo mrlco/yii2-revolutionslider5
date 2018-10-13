@@ -1,0 +1,21 @@
+{
+    "name": "mrlco/yii2-revolutionslider5",
+    "description": "Yii2 Slider Revolution V5 jQuery Wrapper Extension",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","mrlco","yii2-revolutionslider5","slider","revolution"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehran Barzandeh",
+            "email": "info@mrlco.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "mrlco\\sliderrevolution\\": ""
+        }
+    }
+}
