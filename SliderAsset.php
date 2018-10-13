@@ -37,7 +37,7 @@ class SliderAsset extends \yii\web\AssetBundle
 
     public function init()
     {
-        $module = \Yii::$app->getModule('sliderrevolution');
+        $module = \Yii::$app->getModule('revolutionslider');
         $this->sourcePath = $module->getPluginLocation();
         parent::init();
     }
