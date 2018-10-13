@@ -56,7 +56,7 @@ class SliderRevolution extends \yii\base\Widget
     {
         parent::init();
 
-        $this->_module = \Yii::$app->getModule('sliderrevolution');
+        $this->_module = \Yii::$app->getModule('revolutionslider');
         $this->_pluginLocation = $this->_module->getPluginLocation();
 
         if ($this->_module === null) {
@@ -134,7 +134,7 @@ class SliderRevolution extends \yii\base\Widget
                 if (revapi24) revapi24.revSliderSlicey();
             });";
 
-        $this->view->registerJs($code, \yii\web\View::POS_END, 'yii2-sliderrevolution');
+        $this->view->registerJs($code, \yii\web\View::POS_END, 'yii2-revolutionslider5');
     }
 
     public function buildSlider()
