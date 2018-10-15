@@ -155,7 +155,7 @@ class SliderRevolution extends \yii\base\Widget
         $this->rawSliderHtml .= $this->renderSlides();
 
         $this->rawSliderHtml .= Html::endTag('ul');
-        $this->rawSliderHtml .= Html::tag('div', '',['class' => 'tp-bannertimer tp-bottom', 'style' => 'height: 5px; background: rgb(87,202,133);']);
+        $this->rawSliderHtml .= Html::tag('div', '',['class' => 'tp-bannertimer', 'style' => 'height: 7px; background: rgba(255, 255, 255, 0.25);']);
         $this->rawSliderHtml .= Html::endTag('div');
         $this->rawSliderHtml .= Html::endTag('div');
     }
