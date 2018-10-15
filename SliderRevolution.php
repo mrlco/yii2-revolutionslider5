@@ -107,7 +107,15 @@ class SliderRevolution extends \yii\base\Widget
                     if (is_array($val2)) {
                         $subItem = '{';
                         foreach ($val2 as $key3 => $val3) {
-                            $subItem .= $key3 . ':' . $val3 . ',';
+                            if (is_array($val3)) {
+                                $subItem2 = '{';
+                                foreach ($val3 as $key4 => $val4) {
+                                    $subItem2 .= $key4 . ':' . $val4 . ',';
+                                }
+                                $item .= $key3 . ':' . rtrim($subItem2, ',') . '},';
+                            } else {
+                                $item .= $key3 . ':' . $val3 . ',';
+                            }
                         }
                         $item .= $key2 . ':' . rtrim($subItem, ',') . '},';
                     } else {
